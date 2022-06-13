@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body onload="getValue()">
+    <div id="mainContainer" style="width: 100vw; height: 100vh">
+      <span class="modeName">Dark mode</span>
+      <label class="switch">
+        <input type="checkbox" onclick="toggleBetween()" />
+        <span class="slider round"></span>
+      </label>
+
+      <div class="navbar">
+        <a href="index.html">Mad Libs</a>
+        <a href="index2.html">Tom Thumb</a>
+      </div>
+      <div class="title">
+        <p>Mad Libs</p>
+      </div>
+      <form autocomplete="off" class="input">
+        <label for="fname">Person name:</label>
+        <input type="text" id="pname" name="fname" /><br />
+        <label for="lname">Character:</label>
+        <input type="text" id="char" name="lname" /><br />
+        <label for="fname">Adverb:</label>
+        <input type="text" id="adv" name="fname" /><br />
+        <label for="lname">Adjective:</label>
+        <input type="text" id="adj" name="lname" /><br />
+        <input type="button" value="Tell story" class="tellStory" />
+        <button class="buttonC">Add cookie</button>
+        <!-- disabled="disabled" -->
+      </form>
+      <div id="result" class="container">
+        <p>
+          One day, my friend <span class="name"></span> was visiting New York
+          <br />
+          and ran into <span class="character"></span>,
+          <span class="name"></span>
+          ran <span id="adverb"></span> to meet
+          <span class="character"></span> turned out <br />
+          to be very <span id="adjective"></span> and
+          <span class="name"></span> did not enjoy the meeting.
+        </p>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

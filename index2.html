@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <script src="./index2.js"></script>
+  <body onload="getValue()">
+    <div id="mainContainer" style="width: 100vw; height: 100vh">
+      <span class="modeName">Dark mode</span>
+      <label class="switch">
+        <input type="checkbox" onclick="toggleBetween()" />
+        <span class="slider round"></span>
+      </label>
+      <div class="navbar">
+        <a href="index.html">Mad Libs</a>
+        <a href="index2.html">Tom Thumb</a>
+      </div>
+      <div class="title">
+        <p>Tom Thumb</p>
+      </div>
+      <form autocomplete="off" class="input">
+        <label for="widt">Image with (px):</label>
+        <input type="text" id="width" /><br />
+        <label for="heigh">Image height (px):</label>
+        <input type="text" id="height" /><br />
+        <label for="numberOfColor">Number of Colors:</label>
+        <input type="text" id="numberOfColors" /><br />
+        <input
+          type="button"
+          value="Calculate File Size"
+          class="calculateFileSize"
+        />
+        <button class="buttonC">Add cookie</button>
+      </form>
+
+      <div id="result" class="container"><span class="text"></span></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index2.js"></script>
+  </body>
+</html>

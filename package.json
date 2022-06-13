@@ -1,0 +1,20 @@
+{
+  "name": "nfactorial-homework-06010-npm-storages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gitInit": "git init",
+    "gitAdd": "git add .",
+    "gitCommit": "git commit -m 'first commit'",
+    "gitBranch":"git branch -M main",
+    "gitRemote": "git remote add origin https://github.com/assylbekovna03/nfactorial-homework-0610-npm-storages.git",
+    "gitPush": "git push -u origin main",
+    "pushToGit": "npm run gitInit && npm run gitAdd && npm run gitCommit && npm run gitBranch && npm run gitRemote && npm run gitPush"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
